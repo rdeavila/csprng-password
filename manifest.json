@@ -1,7 +1,8 @@
 {
   "name": "CSPRNG Password",
+  "short_name": "CSPRNG Password",
   "description": "Get a password from csprng.xyz API",
-  "version": "0.1.2",
+  "version": "0.2",
   "browser_action": {
     "default_title": "Get a password!",
     "default_icon": "icon16.png",
