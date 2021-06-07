@@ -15,8 +15,8 @@ function getPassword () {
                 var resp = JSON.parse(xhr.responseText);
                 var pwd = resp.Data.replace(/[^\w\s]/gi, '').substring(0, passwordSize);
 
-                document.getElementById("password").innerHTML = pwd;
-                document.getElementById("date").innerHTML = pwd.length + " characters generated at " + resp.Time
+                document.getElementById("password").textContent = pwd;
+                document.getElementById("date").textContent = pwd.length + " characters generated at " + resp.Time
             }
         }
         xhr.send();
