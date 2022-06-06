@@ -3,7 +3,7 @@ function saveOptions () {
     var help = document.getElementById("help");
 
     if (isNaN(parseInt(choosenSize)) || parseInt(choosenSize) < 10 || parseInt(choosenSize) > 50) {
-        help.textContent = "ERROR: number must be integer, and between 10 and 50.";
+        help.textContent = "ERROR: number must be an integer between 10 and 50.";
     } else {
         chrome.storage.sync.set({ passwordSize: choosenSize }, function () {
             help.textContent = "Value saved!";
@@ -17,7 +17,7 @@ function saveOptions () {
 
 function restoreOptions () {
     chrome.storage.sync.get(["passwordSize"], function (result) {
-        if (result.passwordSize == undefined) {
+        if (result.passwordSize === undefined) {
             document.getElementById("size").value = "10";
         } else {
             document.getElementById("size").value = result.passwordSize;

@@ -1,14 +1,15 @@
 body {
     width: 400px;
-    font-family: 'B612', sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #33475b;
     text-align: center;
+    background-color: #eeeeee;
 }
 
 h4 {
-    font-family: 'B612', sans-serif;
+    font-family: sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: #33475b;
