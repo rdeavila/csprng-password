@@ -9,7 +9,7 @@ function getPassword () {
             passwordSize = parseInt(result.passwordSize);
         }
 
-        xhr.open("GET", "https://csprng.xyz/v1/api?length=55", true);
+        xhr.open("GET", "https://csprng.rda.run/v1/api?length=55", true);
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
                 var resp = JSON.parse(xhr.responseText);
